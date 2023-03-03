@@ -73,7 +73,7 @@ public class MechMovement : MonoBehaviour
         inputHorizontal = Input.GetAxisRaw("Horizontal");
         inputVertical = Input.GetAxisRaw("Vertical");
         
-        rb.velocity = new Vector2(rb.velocity.x, Helper.Clamp(rb.velocity.y, -20f, 80f));
+        rb.velocity = new Vector2(rb.velocity.x, Helper.Clamp(rb.velocity.y, -10f, 9f));
 
         Flip();
         Jump();
