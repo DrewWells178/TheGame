@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Helicopter : MonoBehaviour
+public class Helicopter : Enemy
 {
     private Rigidbody2D rb;
     private BoxCollider2D bc2;

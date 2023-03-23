@@ -6,10 +6,12 @@ public class EnemiesLVL1 : MonoBehaviour
 {
     public float health;
     public float speed;
+    public int damage;
+
     [HideInInspector]
     public Transform player;
 
-    public void TakeDamage(float damage)
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +22,15 @@ public class EnemiesLVL1 : MonoBehaviour
     void Update()
     {
         
+    }
+
+    // Enemy taking damage
+    public void TakeDamage(int damageAmount)
+    {
+        health -= damageAmount;
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
