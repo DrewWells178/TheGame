@@ -9,8 +9,6 @@ public class TankAI : MonoBehaviour
     private BoxCollider2D bc2;
     [SerializeField] LayerMask lm;
     
-    
-
     // Roaming Variables
     private float moveSpeed = 1.25f;
     private float waitTime = 2f;
@@ -197,11 +195,12 @@ public class TankAI : MonoBehaviour
     // will make raycast to determine if the tank can see the player with no obstructions
     private void drawSiteLine()
     {
-
+        
     }
 
     private bool canShoot()
     {
+        // Stuff goes here
         return false;
     }
 }
