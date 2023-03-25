@@ -26,7 +26,7 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter2D (Collider2D hitInfo)
     {
-        Debug.Log(hitInfo.name);
+        //Debug.Log(hitInfo.name);
         
 
         if(hitInfo.name != "Player")
