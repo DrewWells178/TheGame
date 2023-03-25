@@ -47,13 +47,7 @@ public class Helicopter : Enemy
     // Update is called once per frame
     void Update()
     {
-        if(player != null)
-        {
-            if(Vector2.Distance(transform.position, player.position) > stopDistance)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
-            }
-        }
+        
     }
    
 }

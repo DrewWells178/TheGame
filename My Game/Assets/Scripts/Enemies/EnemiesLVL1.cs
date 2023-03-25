@@ -7,6 +7,7 @@ public class EnemiesLVL1 : MonoBehaviour
     public float health;
     public float speed;
     public int damage;
+    
 
     [HideInInspector]
     public Transform player;
