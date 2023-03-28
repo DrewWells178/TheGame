@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float health = 100;
+    public float health;
+    public float speed;
+    public float damage;
+
+    [HideInInspector]
+    public Transform player;
 
     // public GameObject deathEffect;
-    
+
     public void TakeDamage(float damage)
     {
         health -= damage;
