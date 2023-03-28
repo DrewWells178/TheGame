@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6705626587293721062}
   m_Layer: 0
   m_Name: Crosshair
-  m_TagString: Untagged
+  m_TagString: Crosshair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,4 +97,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58dbf3714e39e94697c6e7ebbefa732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 966150135580700036, guid: ccadab401a004b94b84c9afa8b6e174a, type: 3}
