@@ -10,8 +10,7 @@ public class Helicopter : Enemy
 
     // *** MY ADDITIONS***
 
-    [HideInInspector]
-    public Transform player;
+  
 
     // Roaming Variables
     public float moveSpeed;
@@ -40,8 +39,7 @@ public class Helicopter : Enemy
         bc2 = transform.GetComponent<BoxCollider2D>();
         
 
-        // ***My additions***
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+ 
     }
 
     // Update is called once per frame

@@ -6,7 +6,7 @@ public class EnemiesLVL1 : MonoBehaviour
 {
     public float health;
     public float speed;
-    public int damage;
+    public float damage;
     
 
     [HideInInspector]
@@ -26,9 +26,10 @@ public class EnemiesLVL1 : MonoBehaviour
     }
 
     // Enemy taking damage
-    public void TakeDamage(int damageAmount)
+    public void TakeDamage(float damage)
     {
-        health -= damageAmount;
+        Debug.Log("hit");
+        health -= damage;
         if (health <= 0)
         {
             Destroy(gameObject);

@@ -5,7 +5,7 @@ using SVS.AIPlayerDetector;
 
 
 
-public class MeleeEnemy : EnemiesLVL1
+public class MeleeEnemy : Enemy
 {
 
     private Rigidbody2D rb;
@@ -20,25 +20,29 @@ public class MeleeEnemy : EnemiesLVL1
     //Patrolling Variables
     float waitTime;
     public float startWaitTime;
+    public Transform[] patrolPoints;
+    int currentPointIndex;
 
     //Detection Variables
     [SerializeField] AIPlayerDetector detector;
     bool isPursuing;
 
 
-    public Transform[] patrolPoints;
-    int currentPointIndex;
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
-        waitTime = startWaitTime;
+        waitTime = startWaitTime;        
+        rb = GetComponent<Rigidbody2D>();
+        bc2 = transform.GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
                 
         if (detector.PlayerDetected)
         {
