@@ -316,10 +316,10 @@ MonoBehaviour:
   attackTime: 5
   attackSpeed: 1
   startWaitTime: 1
-  detector: {fileID: 4844773136777542980}
   patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 111851903065210287, guid: 7b650453e89b3854b905980a459f3688, type: 3}
+  - {fileID: 2124289050045590563, guid: f92cd02f3c1e66b4595b93ed2e5456b5, type: 3}
+  detector: {fileID: 4844773136777542980}
 --- !u!114 &4844773136777542980
 MonoBehaviour:
   m_ObjectHideFlags: 0
