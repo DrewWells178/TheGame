@@ -98,5 +98,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 966150135580700036, guid: ccadab401a004b94b84c9afa8b6e174a, type: 3}
-  character: {fileID: 4714824740272273645, guid: 381114945c9085d45822ae6a9ce9d32c, type: 3}
+  player: {fileID: 4714824740272273645, guid: 381114945c9085d45822ae6a9ce9d32c, type: 3}
   threshold: 1.5
